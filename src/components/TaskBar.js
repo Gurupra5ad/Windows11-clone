@@ -1,10 +1,20 @@
 import React from 'react'
 import styled from 'styled-components';
+import StartBox from './StartBox';
 import TaskIcon from './TaskIcon';
 
 function TaskBar() {
+
+    const start = () => (
+        <Box>
+            <StartBox />
+        </Box>
+    )
     return (
         <Taskbar>
+            <Box>
+                <StartBox />
+            </Box>
             <Menu>
                 <TaskIcon name="start.ico"/>
                 <TaskIcon name="search.ico"/>
@@ -34,4 +44,12 @@ const Taskbar = styled.div`
 const Menu = styled.div`
     display:flex;
     justify-content:center;
+`
+
+const Box = styled.div`
+    position:absolute;
+    bottom:80px;
+    top:auto;
+    right:50%;
+    left:50%;
 `

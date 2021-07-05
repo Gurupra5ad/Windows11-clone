@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components';
+import StartBox from './components/StartBox';
 import TaskBar from './components/TaskBar';
 
 function Home() {
     return (
         <Container>
+            {/* <StartBox /> */}
             <TaskBar />
         </Container>
     )
@@ -19,4 +21,5 @@ const Container = styled.div`
     width:100vw;
     height:100vh; 
     display:flex;
+    flex-direction: columns;
 `
