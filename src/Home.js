@@ -1,12 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-import StartBox from './components/StartBox';
 import TaskBar from './components/TaskBar';
 
 function Home() {
     return (
         <Container>
-            {/* <StartBox /> */}
             <TaskBar />
         </Container>
     )
